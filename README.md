@@ -19,7 +19,6 @@
 - [Improvements](#potential-improvements)
 - [Referenced Repos & Justifications](#referenced-github-repositories)
 - [Final Note](#final-note)
-- [Tech Stack](#tech-stack)
 
 ## Overview
 InsightFoundry is a language-agnostic, LLM-powered code analysis prototype that extracts structured insights from any software codebase. It summarizes source files and methods, estimates complexity, and produces consistent, machine-readable JSON outputs for downstream use.
