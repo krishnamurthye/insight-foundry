@@ -68,18 +68,16 @@ InsightFoundry follows a modular pipeline architecture optimized for LLM-driven 
 graph TD
   A[Codebase Directory] --> B[Language & File Detector]
   B --> C[Function-Level Splitter]
-  C --> D[Prompt Generator (per-language)]
-  D --> E[LLM Engine (LangChain)]
-  E --> F[Output Parser (JSON Normalizer)]
-  F --> G[Output Store (Flat File)]
+  C --> D[Prompt Generator - per language]
+  D --> E[LLM Engine - LangChain]
+  E --> F[Output Parser - JSON Normalizer]
+  F --> G[Output Store - Flat File]
+  E --> E1[Ollama - local]
+  E --> E2[OpenAI - cloud]
 
-  subgraph Model Backend
-    E1[Ollama (local)]
-    E2[OpenAI (cloud)]
-  end
-  E --> E1
-  E --> E2
 ```
+
+
 
 ### Key Design Principles
 
